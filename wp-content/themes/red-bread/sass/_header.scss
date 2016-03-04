@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------
+# Header styles
+--------------------------------------------------------------*/
+.site-header  {
+  margin-top: 2.25rem;
+  border-top: $border__styles;
+}
+.site-branding {
+  display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.main-logo {
+  width: 18.75rem;
+  padding: 1.5rem 0;
+}
+.main-logo, .social {
+  flex: 1 0 50%;
+}
+.social {
+  color: $brand__med-grey;
+  display: flex;
+  justify-content: flex-end;
+  ul {
+    margin-top: 23px;
+    li{
+      display: inline-block;
+      padding-left: 1.5rem;
+    }
+  }
+}
+.main-navigation {
+  border-top: $border__styles;
+  border-bottom: $border__styles;
+  box-shadow: 0 2px 5px rgba(128, 128, 128, .25);
+  font-weight: bold;
+  ul {
+    padding-left: 2rem;
+  }
+  li {
+    padding: .75rem 1.5rem;
+    border-right: $border__styles;
+    &:first-child {
+      border-left: $border__styles;
+    }
+    a {
+      color: $brand__med-grey;
+      &:hover {
+        color: $brand__dk-grey;
+      }
+    }
+  }
+}
