@@ -51,3 +51,27 @@
     }
   }
 }
+
+.nav-search {
+  display: flex;
+    justify-content: flex-end;
+  fieldset, input {
+    border: 0;
+    outline: none;
+    padding: 0;
+  }
+  input {
+    width: 11rem;
+  }
+  .search-submit {
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+    // padding: 1rem 0;
+    // font-size: 1rem;
+  }
+}
+
+.current_page_item {
+  border-bottom: 3px solid $color__red-text;
+}

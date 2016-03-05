@@ -289,6 +289,7 @@ select,
 textarea {
   color: #222222;
   font-family: "Open Sans", sans-serif;
+  font-weight: normal;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -522,6 +523,27 @@ textarea {
       color: #808080; }
       .main-navigation li a:hover {
         color: #333333; }
+
+.nav-search {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .nav-search fieldset, .nav-search input {
+    border: 0;
+    outline: none;
+    padding: 0; }
+  .nav-search input {
+    width: 11rem; }
+  .nav-search .search-submit {
+    background: transparent;
+    box-shadow: none;
+    border: 0; }
+
+.current_page_item {
+  border-bottom: 3px solid #db272a; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -775,7 +797,7 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.site-branding, .site-content, .nav-wrapper {
+.site-branding, .nav-wrapper, .site-content {
   max-width: 1024px;
   margin: 0 auto; }
 
