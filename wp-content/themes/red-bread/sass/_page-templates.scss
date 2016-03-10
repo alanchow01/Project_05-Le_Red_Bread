@@ -1,8 +1,166 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.site-branding, .nav-wrapper, .site-content {
+.site-branding, .nav-wrapper, .site-main {
   max-width: 1024px;
   margin: 0 auto;
 }
 /* Front page */
+.hero {
+  background: #000 url('../../images/hero-bread.jpg') center top;
+  background-size: cover;
+  width: 100vw;
+  height: 550px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  h1 {
+    color: #fff;
+    font-size: 6rem;
+  }
+}
+
+.sect-type-archive{
+  margin: 3rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.prod-types {
+  flex: 0 1 22%;
+  text-align: center;
+  display: block;
+  img {
+    width: 80%;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+.cta {
+  background-color: $color__background;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+    justify-content: space-between;
+    align-content: center;
+    span {
+      align-self: center;
+    }
+}
+.cta-btn {
+  background-color: #400c0d;
+  color: #fff;
+  padding: .5rem 1.5rem;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+}
+
+.sect-grey {
+  background-color: $color__background;
+  padding: 4rem 0;
+  border: 1px solid  #e1e1e1;
+}
+
+.latest-posts {
+  flex: 0 1 25%;
+  overflow: hidden;
+}
+
+.prod-title {
+  width: 13.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.thumb-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  border: 1px solid #fff;
+
+  img {
+    max-width: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.sect-white {
+  padding: 3rem 0;
+}
+
+/* Single Page */
+
+.content-area {
+  flex: 0 1 73%;
+}
+
+.widget-area {
+flex: 0 1 27%;
+border-left: 1px solid $color__lt-grey;
+padding: 1rem 3rem;
+}
+
+.lrb-map {
+  width: 100%;
+}
+
+/*Product Archive*/
+.site-main {
+  padding-top: 3rem;
+}
+.post-type-archive-product .content-area {
+  flex: 1 0 100%;
+}
+
+.prod-grid, .latest-grid {
+  margin-bottom: 10rem;
+  display: flex;
+    flex-flow: row wrap;
+}
+
+.prod-square {
+  flex: 0 1 25%;
+  overflow: hidden;
+  img {
+  border: 1px solid #ffffff;
+  border-top: 0;
+  display: block;
+  }
+}
+
+.prod-meta {
+  border: 1px solid #e1e1e1;
+  border-top: 0;
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.prod-title {
+  background-color: #fff;
+  &::after {
+    white-space: nowrap;
+    overflow: hidden;
+    content: '. . . . . . . . . . . . . . ';
+  }
+}
+
+.price {
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  padding-right: 1rem;
+}

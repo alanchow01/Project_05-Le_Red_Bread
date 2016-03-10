@@ -22,7 +22,7 @@ get_header(); ?>
 					comments_template();
 				endif;
 			?>
-
+				<button type="button" id ="close-comments">Close Comments</button>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

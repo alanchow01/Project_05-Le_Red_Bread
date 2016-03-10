@@ -34,6 +34,23 @@ hr {
 	margin-bottom: $base__space-unit;
 }
 
+.fancy-hr {
+	border: none;
+	border-bottom: 2px solid #e1e1e1;
+	color: #e1e1e1;
+	margin: 2.5rem auto 3rem;
+	padding: 0;
+  text-align: center;
+  width: 30%;
+	&:after {
+	  content: '•';
+		display: inline-block;
+	  position: relative;
+	  font-size: ($font__size * 3.5);
+		line-height: 0;
+	}
+}
+
 ul, ol {
 	margin: 0 0 $base__space-unit 0; //($base__space-unit * 2);
 	padding: 0;

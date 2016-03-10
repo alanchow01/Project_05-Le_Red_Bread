@@ -40,6 +40,7 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
+	background-color: #eeeeee;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 
@@ -58,5 +59,6 @@ input[type="search"] {
 
 textarea {
 	padding-left: 3px;
-	width: 100%;
+	width: 90%;
+	height: 15rem;
 }

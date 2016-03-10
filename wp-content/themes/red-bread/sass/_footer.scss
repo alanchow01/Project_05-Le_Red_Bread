@@ -1,0 +1,26 @@
+.site-footer {
+  background-color: $color__off-black;
+  color: #fff;
+}
+
+.footer-wrap {
+  font-size: 1rem;
+  line-height: 2;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 3rem .25rem 2rem;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 15rem;
+      align-self: center;
+    }
+}
+
+.copyright {
+  font-size: .8rem;
+  background-color: $color__dk-grey;
+  padding: 1.5rem 0;
+  text-align: center;
+}

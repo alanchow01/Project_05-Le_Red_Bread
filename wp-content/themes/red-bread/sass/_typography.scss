@@ -20,6 +20,14 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	color: $color__red-text;
 	font-family: $font__headlines;
+	margin: 0;
+}
+
+h1 {
+	color: $color__dk-grey;
+	font-size: 2.15rem;
+	text-transform: uppercase;
+	margin: 0;
 }
 
 /* Copy */
