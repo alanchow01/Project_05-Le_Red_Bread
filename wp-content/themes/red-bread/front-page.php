@@ -75,7 +75,11 @@ get_header(); ?>
 						<div class="review-img"><?php the_post_thumbnail('medium'); ?></div>
 						<div class="review-copy">
 							<?php echo CFS()->get('testimonial')?>
-							<p><?php echo CFS()->get('name')?></p>
+							<p class="visitor">
+								<a href="testimonials">
+									<?php echo CFS()->get('name')?>
+								</a>
+							</p>
 							<p><?php echo CFS()->get('job')?> &ndash; <?php echo CFS()->get('company')?></p>
 						</div>
 					</div>

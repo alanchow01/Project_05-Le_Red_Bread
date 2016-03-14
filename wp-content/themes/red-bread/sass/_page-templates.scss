@@ -141,6 +141,14 @@
     border:0;
   }
 }
+.visitor {
+  a:link, a:visited {
+    color: $color__text-main;
+  }
+  a:hover, a:active {
+    color: $color__red-text;
+  }
+}
 
 .review-img {
   flex: 1 0 20%;
@@ -149,7 +157,7 @@
 
 .review-copy {
   flex: 1 0 80%;
-  padding-left: 2rem;
+  padding-left: 1.25rem;
   text-align: left;
   p {
     margin: 0;
@@ -353,16 +361,31 @@
   @include font-size(1.5);
 }
 
-// Taxonomy products
-.date, .category, .tag{
+// Archive pages
+.date, .category, .tag, .post-type-archive-testimonial{
   .page-header {
-    text-align: left;
-    padding-bottom: 2rem;
     border-bottom: $border__dashed;
     margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
   }
 }
 
+// Testimonial archive page
+.testimonials-archive {
+  .testimonial-block {
+    &:first-child {
+      padding-top: 0;
+    }
+    border-bottom: $border__dashed;
+    border-left: none;
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// Taxonomy products
 .tax-product-type {
   .page-header {
     text-align: left;
@@ -416,5 +439,4 @@
 // Error 404
 .widgettitle {
   margin-bottom: 2rem;
-
 }

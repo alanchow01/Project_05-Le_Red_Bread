@@ -44,6 +44,9 @@ function lrb_modify_archive_loop( $query ) {
 		$query->set( 'orderby', 'title' );
 		$query->set( 'order', 'ASC' );
 		$query->set( 'posts_per_page', 12 );
+	} elseif ( is_post_type_archive( array( 'testimonial' ) ) && !is_admin() ) {
+		$query->set('orderby', 'title');
+		$query->set('order', 'ASC');
 	}
 }
 add_action('pre_get_posts', 'lrb_modify_archive_loop');
@@ -56,6 +59,8 @@ function lrb_archive_title($title) {
 	} elseif (is_tax('product-type')) {
 		$term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
 		$title = $term->name;
+	} elseif (is_post_type_archive(array('testimonial'))) {
+		$title = 'Testimonials';
 	}
 	return $title;
 }

@@ -1086,6 +1086,12 @@ object {
   .testimonial-block:last-child {
     border: 0; }
 
+.visitor a:link, .visitor a:visited {
+  color: #222222; }
+
+.visitor a:hover, .visitor a:active {
+  color: #db272a; }
+
 .review-img {
   -webkit-flex: 1 0 20%;
       -ms-flex: 1 0 20%;
@@ -1096,7 +1102,7 @@ object {
   -webkit-flex: 1 0 80%;
       -ms-flex: 1 0 80%;
           flex: 1 0 80%;
-  padding-left: 2rem;
+  padding-left: 1.25rem;
   text-align: left; }
   .review-copy p {
     margin: 0; }
@@ -1277,11 +1283,20 @@ object {
   font-size: 24px;
   font-size: 1.5rem; }
 
-.date .page-header, .category .page-header, .tag .page-header {
-  text-align: left;
-  padding-bottom: 2rem;
+.date .page-header, .category .page-header, .tag .page-header, .post-type-archive-testimonial .page-header {
   border-bottom: 1px dashed #d2d2d2;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  text-align: left; }
+
+.testimonials-archive .testimonial-block {
+  border-bottom: 1px dashed #d2d2d2;
+  border-left: none;
+  border-right: none;
+  padding-left: 0;
+  padding-right: 0; }
+  .testimonials-archive .testimonial-block:first-child {
+    padding-top: 0; }
 
 .tax-product-type .page-header {
   text-align: left; }
