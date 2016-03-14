@@ -20,7 +20,7 @@
 						<i class="fa fa-facebook-square"></i> <i class="fa fa-twitter-square"></i> <i class="fa fa-google-plus-square"></i>
 					</div>
 					<div class="ft-logo">
-						<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo-white.svg" alt="<?php bloginfo( 'description' ); ?>">
+						<img src="<?php echo esc_url( get_template_directory_uri()); ?>/images/lrb-logo-white.svg" alt="<?php bloginfo( 'description' ); ?>">
 					</div>
 					<div class="ft-hours">
 						<?php dynamic_sidebar('sidebar-2'); ?>

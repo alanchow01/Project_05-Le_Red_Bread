@@ -32,10 +32,10 @@ get_header();
 
     <h2 class="section-title">Our Story</h2>
     <?php echo CFS()->get('our_story_copy')?>
-    
+
     <div class="cta">
       <span>  Feel free to contact us with any questions coments or suggestions. We even take custom orders!</span>
-      <a href="<?php bloginfo('template_directory'); ?>/contact" class="cta-btn">Contact Us</a>
+      <a href="<?php echo esc_url( get_template_directory_uri()); ?>/contact" class="cta-btn">Contact Us</a>
     </div>
 
   </main>

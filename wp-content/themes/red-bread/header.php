@@ -24,7 +24,7 @@
 			<div class="site-branding">
 				<h1 class="site-title screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo.svg" alt="<?php bloginfo( 'description' ); ?>" class="main-logo">
+					<img src="<?php echo esc_url( get_template_directory_uri()); ?>/images/lrb-logo.svg" alt="<?php bloginfo( 'description' ); ?>" class="main-logo">
 				</a>
 				<div class="social">
 					<ul>
