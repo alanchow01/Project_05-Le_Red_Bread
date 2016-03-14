@@ -12,22 +12,18 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="footer-wrap">
 					<div class="ft-contact">
-						Contact
+						<h3>Contact</h3>
 						<ul>
-						<li><i class="fa fa-envelope"></i>info@leredbread.com</li>
-						<li><i class="fa fa-phone"></i>(555) 343 456 7891</li>
-						<i class="fa fa-facebook-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-google-plus-square"></i>
+						<li><i class="fa fa-envelope"></i> <a href="mailto:info@leredbread.com">info@leredbread.com</a></li>
+						<li><i class="fa fa-phone"></i>  <a href="5553434567">(555) 343 456 7891</a></li>
+					</ul>
+						<i class="fa fa-facebook-square"></i> <i class="fa fa-twitter-square"></i> <i class="fa fa-google-plus-square"></i>
 					</div>
 					<div class="ft-logo">
 						<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo-white.svg" alt="<?php bloginfo( 'description' ); ?>">
 					</div>
 					<div class="ft-hours">
 						<?php dynamic_sidebar('sidebar-2'); ?>
-						<!-- BUSINESS HOURS
-						<ul>
-						<li>Monday-Friday: 9am to 5pm</li>
-						<li>Saturday: 10am to 2pm</li>
-						<li>Sunday: Closed</li> -->
 					</div>
 				</div>
 

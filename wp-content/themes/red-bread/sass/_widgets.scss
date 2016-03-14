@@ -2,7 +2,7 @@
 # Widgets
 --------------------------------------------------------------*/
 
-.widget {
+.widget, aside {
 	margin: 0 0 $base__space-unit;
 
 	/* Make sure select elements fit in widgets. */
@@ -14,4 +14,17 @@
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
+}
+
+.contact-block {
+	display: flex;
+	.fa {
+		min-width: 30px;
+	}
+}
+
+.widget-area {
+	border-left: 1px solid #e1e1e1;
+	flex: 0 1 27%;
+	padding: 3rem 0 0 3rem;
 }

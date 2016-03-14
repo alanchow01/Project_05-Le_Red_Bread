@@ -18,16 +18,54 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	color: $color__red-text;
+	color: $color__med-grey;
 	font-family: $font__headlines;
 	margin: 0;
 }
 
 h1 {
-	color: $color__dk-grey;
+	color: $color__text-main;
 	font-size: 2.15rem;
 	text-transform: uppercase;
-	margin: 0;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+.home{
+	h2, h3 {
+		color: $color__text-main;
+		text-transform: uppercase;
+	}
+}
+
+.widget-area {
+	line-height: 2;
+	color: $color__med-grey;
+	i {
+		padding-top: 5px;
+	}
+	p {
+		margin: 0;
+	}
+	h2, h3 {
+		text-transform: uppercase;
+		color: $color__text-main;
+	}
+	h2 {
+		@include font-size(1.25);
+	}
+	.day-of-week {
+		color: $color__red-text;
+	}
+}
+.day-of-week {
+	font-weight: bold;
 }
 
 /* Copy */
@@ -36,8 +74,13 @@ p {
 	margin-bottom: $base__space-unit;
 }
 
-dfn, cite, em, i {
+dfn, em, i {
 	font-style: italic;
+}
+
+cite {
+	font-weight: bold;
+	font-style: normal;
 }
 
 blockquote {

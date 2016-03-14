@@ -129,21 +129,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-
-// function lrb_comment_close_ajax() {
-// 	check_ajax_referer('lrb_comment_status', 'security');
-// 	if(!current_user_can('edit_posts')){
-// 		exit;
-// 	}
-// 	$id = $_POST('the_post_id');
-// 	if (isset($id) && is_numeric($id)) {
-// 		$the_post = array(
-// 			'ID' => $id,
-// 			'comment_status' => 'closed'
-// 		);
-// 		wp_update_post($the_post);
-// 	}
-// exit;
-// }
-// add_action('wp_ajax_red_comment_ajax', 'lrb_comment_close_ajax');

@@ -51,12 +51,9 @@ add_action('pre_get_posts', 'lrb_modify_archive_loop');
 * filter the archive title.
 */
 function lrb_archive_title($title) {
-	// global $wp_query;
-    //  $term = $wp_query->get_queried_object();
 	if (is_post_type_archive(array('product'))){
 		$title = 'Our Products Are Made Fresh Daily';
-	} elseif (is_tax('product_type')) {
-		// $title = $term->name;
+	} elseif (is_tax('product-type')) {
 		$term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
 		$title = $term->name;
 	}

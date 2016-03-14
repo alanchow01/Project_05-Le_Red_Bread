@@ -1,26 +1,43 @@
 .site-footer {
   background-color: $color__off-black;
   color: #fff;
+  padding-top: 3rem;
 }
 
 .footer-wrap {
   font-size: 1rem;
   line-height: 2;
-  max-width: 1024px;
+  max-width: $base__site-width;
   margin: 0 auto;
-  padding: 3rem .25rem 2rem;
   display: flex;
     justify-content: space-between;
     align-items: center;
+    p {
+      margin: 0;
+    }
     img {
-      width: 15rem;
       align-self: center;
+      width: 16rem;
+    }
+    i {
+      font-size: 1.25rem;
+      padding-right: .25rem;
+    }
+    .lrb-hours-class {
+      margin: 0;
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+    a:link, a:visited {
+      color: #fff;
     }
 }
 
 .copyright {
-  font-size: .8rem;
   background-color: $color__dk-grey;
+  font-size: .8rem;
+  margin-top: 3rem;
   padding: 1.5rem 0;
   text-align: center;
 }

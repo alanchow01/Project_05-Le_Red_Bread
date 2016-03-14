@@ -12,8 +12,8 @@ function register_product_post_type() {
 	$labels = array(
 		'name'                  => 'Products',
 		'singular_name'         => 'Product',
-		'menu_name'             => 'All Products',
-		'name_admin_bar'        => 'Add Products',
+		'menu_name'             => 'Products',
+		'name_admin_bar'        => 'Products',
 		'archives'              => 'Product Archives',
 		'parent_item_colon'     => 'Parent Product:',
 		'all_items'             => 'All Products',
@@ -34,11 +34,11 @@ function register_product_post_type() {
 		'uploaded_to_this_item' => 'Uploaded to this product',
 		'items_list'            => 'Products list',
 		'items_list_navigation' => 'Products list navigation',
-		'filter_items_list'     => 'Filter Products list',
+		'filter_items_list'     => 'Filter products list',
 	);
 	$args = array(
 		'label'                 => 'Product',
-		'description'           => 'This product is for LRB',
+		'description'           => 'The products for Le Red Bread Bakery',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
 		'hierarchical'          => false,

@@ -36,21 +36,6 @@
 	margin: 0 0 $base__space-unit;
 }
 
-.blog {
-	.site-content {
-		display: flex;
-		justify-content: space-between;
-		width: 1024px;
-		margin: 0 auto;
-	}
-}
-.blog {
-	.content-area {
-		flex: 1 0 75%;
-		border-right: 1px solid #e1e1e1;
-	}
-}
-
 /* Asides */
 
 .blog .format-aside .entry-title,

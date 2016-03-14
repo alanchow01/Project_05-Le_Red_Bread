@@ -18,6 +18,14 @@ body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
 blockquote, q {
 	quotes: "" "";
 
@@ -36,7 +44,6 @@ hr {
 
 .fancy-hr {
 	border: none;
-	border-bottom: 2px solid #e1e1e1;
 	color: #e1e1e1;
 	margin: 2.5rem auto 3rem;
 	padding: 0;
@@ -45,14 +52,14 @@ hr {
 	&:after {
 	  content: '•';
 		display: inline-block;
-	  position: relative;
-	  font-size: ($font__size * 3.5);
+		font-size: ($font__size * 3.5);
 		line-height: 0;
+	  position: relative;
 	}
 }
 
 ul, ol {
-	margin: 0 0 $base__space-unit 0; //($base__space-unit * 2);
+	margin: 0; //0 0 $base__space-unit 0; //($base__space-unit * 2);
 	padding: 0;
 }
 

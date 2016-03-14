@@ -12,7 +12,9 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
+	</header><!-- .entry-header -->
 
+	<div class="entry-content">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
@@ -20,10 +22,9 @@
 			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
 
-	<div class="entry-content">
 		<?php the_excerpt(); ?>
+		Price: <?php echo CFS()->get( 'price' ); ?>
 
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

@@ -10,3 +10,20 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin form-button {
+	background-color: #400c0d;
+	border: 0;
+	box-shadow: none;
+	color: #fff;
+  font-size: 1rem;
+	padding: .75rem 1.5rem;
+  text-decoration: none;
+  &:hover {
+		background-color: #6b1416;
+    color: #fff;
+  }
+  &:visited {
+    color: #fff;
+  }
+}

@@ -2,8 +2,8 @@
 # Header styles
 --------------------------------------------------------------*/
 .site-header  {
-  margin-top: 2.25rem;
   border-top: $border__styles;
+  margin-top: 2.25rem;
 }
 .site-branding {
   display: flex;
@@ -11,8 +11,8 @@
     align-items: center;
 }
 .main-logo {
-  width: 18.75rem;
   padding: 1.5rem 0;
+  width: 18.75rem;
 }
 .main-logo, .social {
   flex: 1 0 50%;
@@ -20,9 +20,8 @@
 .social {
   color: $color__med-grey;
   display: flex;
-  justify-content: flex-end;
+    justify-content: flex-end;
   ul {
-    margin-top: 23px;
     li{
       display: inline-block;
       padding-left: 1.5rem;
@@ -33,50 +32,48 @@
   border-top: $border__styles;
   box-shadow: 0 2px 5px rgba(128, 128, 128, .25);
   font-weight: bold;
-  padding: 0;
   margin: 0;
+  padding: 0;
   ul {
     padding-left: 2rem;
   }
   li {
-    padding: .75rem 1.5rem;
     border-right: $border__styles;
+    padding: .75rem 1.5rem;
     &:first-child {
       border-left: $border__styles;
     }
-    a {
-      color: $color__med-grey;
-      &:hover {
-        color: $color__dk-grey;
-      }
-    }
+  }
+  a:link, a:visited {
+    color: $color__med-grey;
+  }
+  a:hover, a:active {
+    color: $color__dk-grey;
   }
 }
 
 .nav-search {
   display: flex;
     justify-content: flex-end;
-  fieldset, input {
-    border: 0;
-    outline: none;
-    padding: 0;
-  }
   input {
-    width: 11rem;
     background: #fff;
+    border: 0;
+    width: 11rem;
   }
-  .search-submit {
-    background: transparent;
+  .search-form button {
+    background-color: #fff;
     box-shadow: none;
     border: 0;
-    padding: 1rem 0;
+    color: $color__lt-grey;
     font-size: 1rem;
+    margin: 0;
+    padding-right: 0;
   }
 }
 
 .current_page_item, .current-menu-item {
   box-shadow: inset 0 -3px 0 0 $color__red-text;
-  a:link, a:hover {
+      a:link {
     color: $color__dk-grey;
   }
 }

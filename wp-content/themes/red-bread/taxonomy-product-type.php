@@ -1,15 +1,13 @@
 <?php
 /**
- * The template for displaying product archive pages.
+ * The template for displaying taxonomy product type.
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area inc-widget">
 		<main id="main" class="site-main" role="main">
-
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -23,7 +21,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content', 'tax' );
 				?>
 
 			<?php endwhile; ?>
