@@ -8,7 +8,7 @@ Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:Red
+Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1277,7 +1277,7 @@ object {
   font-size: 24px;
   font-size: 1.5rem; }
 
-.date .page-header {
+.date .page-header, .category .page-header, .tag .page-header {
   text-align: left;
   padding-bottom: 2rem;
   border-bottom: 1px dashed #d2d2d2;
