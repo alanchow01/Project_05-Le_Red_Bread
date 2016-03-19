@@ -1194,10 +1194,8 @@ object {
 
 .prod-square .prod-title {
   font-weight: normal; }
-  .prod-square .prod-title::after {
-    content: ' .......................................';
-    overflow: hidden;
-    white-space: nowrap; }
+  .prod-square .prod-title:after {
+    content: ' ..............................................................................'; }
 
 .price {
   -webkit-flex: 1 0 auto;

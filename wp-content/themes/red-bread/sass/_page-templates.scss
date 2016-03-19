@@ -253,10 +253,8 @@
 
 .prod-square .prod-title {
   font-weight: normal;
-  &::after {
-    content: ' .......................................';
-    overflow: hidden;
-    white-space: nowrap;
+  &:after {
+    content: ' ..............................................................................';
   }
 }
 
